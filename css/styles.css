@@ -62,7 +62,7 @@ h1 {
 /* give space to site name*/
 .site_name {
     word-spacing: 10px;
-    margin: 0 1em;
+    margin: 1em;
 }
 
 /* add highlight to site name*/
@@ -196,9 +196,9 @@ h1 {
 
 .planet_content {
     margin: 2em 0;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;
     max-width: 100%;
 }
 
@@ -255,7 +255,6 @@ h1 {
 
     /* style the main content */
     .planet_content {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
         width: 100%;
@@ -266,8 +265,9 @@ h1 {
 /* ------------------responsive design for desktop------------------ */
 @media screen and (min-width: 900px) {
     .wrapper {
-        width: 80%;
-        margin: 0 auto;
+        max-width: 1200px; 
+        margin: 0 auto; 
+        padding: 0 20px;
     }
 
     .banner_img {
@@ -281,7 +281,6 @@ h1 {
     }
 
     .planet_content {
-        display: grid;
         grid-template-columns: repeat(6, 1fr);
     }
 
