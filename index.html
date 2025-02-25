@@ -4,21 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The System</title>
+    <!-- link css files -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- link font families -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        
 </head>
-<body class="body">
-    <div>
+<body>
+    <div class="wrapper">
+        <!-- nav part -->
         <header class="header">
-            <h1>The System</h1>
-            <nav>
+            <div class="site_name">
+                <h1>
+                    <span>The</span> 
+                    <span class="highlight">System</span>
+                </h1>
+            </div>
+            <nav class="nav_content">
                 <ul>
-                    <li>Planets</li>
-                    <li>Interstellar</li>
-                    <li>Contact</li>
+                    <li><a href="#Planets"></a>Planets</li>
+                    <li><a href="#Interstellar"></a>Interstellar</li>
+                    <li><a href="#Contact"></a>Contact</li>
                 </ul>
             </nav>
         </header>
+
+        <main>
+            <!-- banner part -->
+            <div class="banner">
+                <img src="./images/milky-way.jpg" alt="milky-way" class="banner_img">
+                <div class="banner_content">
+                    <p>THE SYSTEM MAGAZINE</p>
+                    <h2>Welcome to the <span class="banner_content_highlight">Solar System</span></h2>
+                    <p>Take a tour around the coolest stellar spanystem around </p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+
+        </footer>
     </div>
 </body>
 </html>
