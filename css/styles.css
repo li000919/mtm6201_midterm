@@ -83,6 +83,7 @@ h1 {
     text-decoration: none;
     color: var(--body-color);
     transition: background-color 0.3s ease, transform 0.3s ease, font-size 0.3s ease;
+    border-radius: 18px;
 }
 
 .nav_content li:last-child {
@@ -144,12 +145,11 @@ h1 {
 /* banner_content style*/
 .banner_content {
     position: relative;
-    text-align: center;
     padding: 5em;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 1.5em;
+    text-align: center;
 }
 
 .banner_content_highlight {
@@ -170,7 +170,6 @@ h1 {
     100% {
         background-position: 100% 50%;
     }
-
    
 }
 
@@ -192,6 +191,14 @@ h1 {
 
 /* ------------------responsive design for tablet------------------ */
 @media screen and (min-width: 500px) {
+    /* make the banner_content to the left and left-align */
+    .banner {
+        justify-content: flex-start;
+    }
+
+    .banner_content {
+        align-items: flex-start;
+    }
 
 }
 
@@ -199,6 +206,11 @@ h1 {
 
 /* ------------------responsive design for desktop------------------ */
 @media screen and (min-width: 900px) {
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+
     .header {
         flex-direction: row;
         justify-content: space-between;
