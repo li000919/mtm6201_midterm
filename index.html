@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,20 +12,30 @@
     <!-- link font families -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-        
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
+    <!-- accessibility skip link -->
+    <ul class="skip-links">
+        <li><a href="#nav">Skip to nav</a></li>
+        <li><a href="#main">Skip to content</a></li>
+    </ul>
+
+    <!-- main part -->
     <div class="wrapper">
         <!-- nav part -->
-        <header class="header">
+        <header class="header" role="banner">
             <div class="site_name">
                 <h1>
-                    <span>The</span> 
+                    <span>The</span>
                     <span class="highlight">System</span>
                 </h1>
             </div>
-            <nav class="nav_content">
+            <nav class="nav_content" role="navigation" id="nav">
                 <ul>
                     <li><a href="">Planets</a></li>
                     <li><a href="">Interstellar</a></li>
@@ -33,7 +44,7 @@
             </nav>
         </header>
 
-        <main>
+        <main role="main" id="main">
             <!-- banner part -->
             <div class="banner">
                 <img src="./images/milky-way.jpg" alt="milky-way" class="banner_img">
@@ -43,11 +54,49 @@
                     <p>Take a tour around the coolest stellar spanystem around </p>
                 </div>
             </div>
+
+            <!-- planet part -->
+            <div class="planet_wrapper">
+                <h3>Meet the Locals</h3>
+                <div class="planet_content">
+                    <div class="planet">
+                        <img src="./images/sun.jpg" alt="sun">
+                        <h4>The Sun</h4>
+                        <a href="https://en.wikipedia.org/wiki/Sun">Learn More</a>
+                    </div>
+                    <div class="planet">
+                        <img src="./images/mercury.jpg" alt="Mercury">
+                        <h4>Mercury</h4>
+                        <a href="https://en.wikipedia.org/wiki/Mercury_(planet)">Learn More</a>
+                    </div>
+                    <div class="planet">
+                        <img src="./images/venus.jpg" alt="Venus">
+                        <h4>Venus</h4>
+                        <a href="https://en.wikipedia.org/wiki/Venus">Learn More</a>
+                    </div>
+                    <div class="planet">
+                        <img src="./images/earth.jpg" alt="Earth">
+                        <h4>Earth</h4>
+                        <a href="https://en.wikipedia.org/wiki/Earth">Learn More</a>
+                    </div>
+                    <div class="planet">
+                        <img src="./images/moon.jpg" alt="The Moon">
+                        <h4>The Moon</h4>
+                        <a href="https://en.wikipedia.org/wiki/Moon">Learn More</a>
+                    </div>
+                    <div class="planet">
+                        <img src="./images/mars.jpg" alt="Mars">
+                        <h4>Mars</h4>
+                        <a href="https://en.wikipedia.org/wiki/Mars">Learn More</a>
+                    </div>
+                </div>
+            </div>
         </main>
 
-        <footer>
-
+        <footer class="footer" role="contentinfo">
+            <p>&copy; 2024 - The System</p>
         </footer>
     </div>
 </body>
+
 </html>
