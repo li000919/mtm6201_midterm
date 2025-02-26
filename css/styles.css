@@ -247,11 +247,13 @@ h1 {
     /* make the banner_content to the left and left-align */
     .banner {
         width: 100%;
+        justify-content: flex-start;
     }
 
     .banner_content {
         text-align: left;
     }
+
 
     /* style the main content */
     .planet_content {
